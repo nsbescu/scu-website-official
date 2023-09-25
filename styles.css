@@ -1986,7 +1986,7 @@ border-radius: 10px; /* Adjust the radius value as needed */
   
   .services__card h2 {
     position: absolute;
-    top: 350px;
+    top: 450px;
     left: 30px;
   }
   
@@ -2002,7 +2002,7 @@ border-radius: 10px; /* Adjust the radius value as needed */
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #961f35;
+    background: transparent;
     position: absolute;
     top: 440px;
     left: 30px;
