@@ -1521,13 +1521,13 @@
   }
   
   .main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
-    background-color: #ffffff;
+    height: 68vh;
+    background-color: #961f35;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -1542,7 +1542,7 @@
   
   .main__content h1 {
     font-size: 4rem;
-    background-color: #961f35;
+    background-color: #fff;
     /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
     background-size: 100%;
     -webkit-background-clip: text;
@@ -1554,7 +1554,7 @@
   .main__content h2 {
     font-size: 3rem;
     margin-top: 10px;
-    background-color: #961f35;
+    background-color: #fff;
     /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
     background-size: 100%;
     -webkit-background-clip: text;
@@ -1571,7 +1571,7 @@
   
   .main__btn {
     font-size: 1rem;
-    background-color: #961f35;
+    background-color: #fff;
     /* background-image: linear-gradient(to top, #961f35 0%, #fe5196 100%);  this is if I wanted to gradient this box */
     padding: 14px 32px;
     border: none;
@@ -1587,7 +1587,7 @@
   .main__btn a {
     position: relative;
     z-index: 2;
-    color: #fff;
+    color: #961f35;
     text-decoration: none;
   }
   
@@ -1672,59 +1672,6 @@
       margin: 2.5rem 0;
     }
   }
-  
-/* =============================  Welcome Section  ==================================== */ 
-
-/* Create a container for the layout */
-.container {
-  display: flex;
-}
-
-/* Style for the left column */
-.left-column {
-  flex: 1;
-  padding: 2%; /* Add some padding around the left column */
-}
-
-/* Style for the left image container to make it responsive */
-.photo-text img {
-  max-width: 100%; /* Ensure the image does not exceed its container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.goal-box {
-  background-color: #961f35;
-  border-radius: 4px;
-  color: #fff;
-  padding: 2%; /* Add some padding around the text boxes */
-  margin-top: 2%; /* Add some margin between text boxes */
-}
-
-.text-box {
-  background-color: #ffffff;
-  padding: 2%; /* Add some padding around the text boxes */
-  margin-top: 2%; /* Add some margin between text boxes */
-}
-
-/* Style for the right column */
-.right-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column; /* Stack photos vertically */
-  padding: 2%; /* Add some padding around the right column */
-  gap: 2%; /* Add some gap between photos */
-}
-
-/* Style for photo containers to make them responsive */
-.photo {
-  max-width: 100%; /* Ensure the photo does not exceed its container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.photo img {
-  max-width: 100%; /* Ensure the image does not exceed its container */
-  height: auto; /* Maintain aspect ratio */
-}
 
   /* "General Body Meeting" - Information Section */ 
 
@@ -1734,7 +1681,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 30vh;
   }
 
   .gen_body_information h1 {
@@ -1791,6 +1738,61 @@
       margin-top: 4rem;
     }
   }
+  
+/* =============================  Welcome Section  ==================================== */ 
+
+/* Create a container for the layout */
+.container {
+  display: flex;
+}
+
+/* Style for the left column */
+.left-column {
+  flex: 1;
+  padding: 2%; /* Add some padding around the left column */
+}
+
+/* Style for the left image container to make it responsive */
+.photo-text img {
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.goal-box {
+  background-color: #961f35;
+  border-radius: 4px;
+  color: #fff;
+  padding: 2%; /* Add some padding around the text boxes */
+  margin-top: 2%; /* Add some margin between text boxes */
+}
+
+.text-box {
+  background-color: #ffffff;
+  padding: 2%; /* Add some padding around the text boxes */
+  margin-top: 2%; /* Add some margin between text boxes */
+}
+
+/* Style for the right column */
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Stack photos vertically */
+  padding: 2%; /* Add some padding around the right column */
+  gap: 2%; /* Add some gap between photos */
+}
+
+/* Style for photo containers to make them responsive */
+.photo {
+  max-width: 100%; /* Ensure the photo does not exceed its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.photo img {
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
 
 /* =============================  Chapter Stats Section  ==================================== */ 
   .stats__container {
