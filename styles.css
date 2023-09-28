@@ -214,107 +214,6 @@
     
   }
 
-/* =============================  About Us  ==================================== */ 
-  /*
-  .aboutus__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    height: 90vh;
-    background-color: #ffffff;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  .about__section h1 {
-    text-align: center;
-    display: flex;
-    font-size: 4rem;
-    background-color: #961f35;
-    /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */ /*
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-  
-  .about__section h2 {
-    text-align: center;
-    display: flex;
-    font-size: 4rem;
-    margin-top: 10px;
-    background-color: #961f35;
-    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */ /*
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-  
-  .who__are__we h2 {
-    text-align: center;
-    display: flex;
-    font-size: 2rem;
-    margin-top: 10px;
-    background-color: #961f35;
-    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */ /*
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-
-  .who__are__we p {
-    text-align: center;
-    display: flex;
-    font-size: 1rem;
-    margin-top: 10px;
-    background-color: #141414;
-    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */ /*
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-
-  .mission__statement h2 {
-    text-align: center;
-    display: flex;
-    font-size: 2rem;
-    margin-top: 10px;
-    background-color: #961f35;
-    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); *//*
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-
-  .mission__statement p {
-    text-align: center;
-    display: flex;
-    font-size: 1rem;
-    margin-top: 10px;
-    background-color: #141414;
-    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); *//*
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-*/
-
 /* =============================  MailChimp Student Section  ==================================== */ 
 .mailChimp__student {
   background-color: #ffffff;
@@ -328,9 +227,8 @@
   margin: 0 auto;
   background-color: #ffffff;
   width: 100%;
-  max-width: 100%;
   max-width: 1300px;
-  padding-bottom: 200px;
+  padding-bottom: 10%;
   padding-top: 50px;
 }
 
@@ -349,6 +247,7 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  padding-bottom: 20px;
 }
 
 .mailChimp__student__text__content h2 {
@@ -535,8 +434,8 @@
 }
 
 .about__us__content__container {
-  display:flexbox;
-  grid-template-columns: 1fr 1fr;
+  display:flex ;
+  flex-direction: row;
   align-items: center;
   justify-self: center;
   margin: 0 auto;
@@ -552,13 +451,12 @@
 }
 
 .about__us__text__content {
-  color: #961f35;
   width: 100%;
 }
 
 .about__us__text__content h1 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   background-color: #961f35;
   /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
@@ -568,48 +466,28 @@
   -moz-text-fill-color: transparent;
 }
 
-.about__us__text__content h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-top: 10px;
-  background-color: #141414;
-  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
 .about__us__text__content p {
   color: #141414;
-  text-align: center;
+  text-align: left;
   margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 500;
   padding-bottom: 50px;
 }
 
 .about__us__img--container {
   text-align: center;
+  zoom: normal;
 }
 
 #about__us__img {
   height: 100%;
-  width: 100%;
+  width: 95%;
 }
-
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .about__us__content_container {
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-self: center;
-    width: 100%;
-    margin: 0 auto;
-    height: 90vh;
   }
 
   .about__us__text__content {
@@ -623,14 +501,13 @@
   }
 
   .about__us__text__content h2 {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 
   .about__us__text__content p {
     margin-top: 1rem;
     font-size: 1.5rem;
   }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -640,17 +517,140 @@
   }
 
   .about__us__text__content h2 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .about__us__text__content p {
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   #about__us__img {
     height: 100%;
     width: 100%;
+  }
+}
+
+/* =============================  Mission Statement Updated  ==================================== */ 
+.mission__statement {
+  background-color: #ffffff;
+}
+
+.mission__statement__container {
+  display:flex;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: auto;
+  background-color: #ffffff;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.mission__statement__main__text__content {
+  color: #961f35;
+  width: 100%;
+}
+
+.mission__statement__main__text__content h1 {
+  text-align: center;
+  font-size: 3rem;
+  background-color: #961f35;
+  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+
+}
+
+.mission__statement__main__text__content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  background-color: #141414;
+  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.mission__statement__main__text__content p {
+  color: #141414;
+  text-align: left;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 50px;
+  font-style: italic;
+}
+
+.mission__statement__main__img--container--below {
+  text-align: center;
+}
+
+#mission__statement__main__NSBE__LOGO {
+  height: 100%;
+  width: 50%;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .mission__statement__content_container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .mission__statement__main__text__content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .mission__statement__main__text__content h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .mission__statement__main__text__content h2 {
+    font-size: 3rem;
+  }
+
+  .mission__statement__main__text__content p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mission__statement__main__text__content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .mission__statement__main__text__content h2 {
+    font-size: 2rem;
+  }
+
+  .mission__statement__main__text__content p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  #mission__statement__main__NSBE__LOGO {
+    height: 100%;
+    width: 60%;
   }
 }
 
@@ -710,7 +710,7 @@
   text-align: center;
   margin-top: 1rem;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
   padding-bottom: 50px;
 }
 
@@ -1082,128 +1082,6 @@
   .socialMedia__container h1 {
     font-size: 2.5rem;
     color: #961f35;
-  }
-}
-
-/* =============================  Mission Statement Updated  ==================================== */ 
-.mission__statement {
-  background-color: #ffffff;
-}
-
-.mission__statement__container {
-  display:flexbox;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-self: center;
-  margin: 0 auto;
-  height: auto;
-  background-color: #ffffff;
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-.mission__statement__main__text__content {
-  color: #961f35;
-  width: 100%;
-}
-
-.mission__statement__main__text__content h1 {
-  text-align: center;
-  font-size: 4rem;
-  background-color: #961f35;
-  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-.mission__statement__main__text__content h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-top: 10px;
-  background-color: #141414;
-  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-.mission__statement__main__text__content p {
-  color: #141414;
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding-bottom: 50px;
-}
-
-.mission__statement__main__img--container--below {
-  text-align: center;
-}
-
-#mission__statement__main__NSBE__LOGO {
-  height: 100%;
-  width: 60%;
-}
-
-/* Mobile Responsive */
-@media screen and (max-width: 768px) {
-  .mission__statement__content_container {
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-self: center;
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-  }
-
-  .mission__statement__main__text__content {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-
-  .mission__statement__main__text__content h1 {
-    font-size: 2.5rem;
-    margin-top: 2rem;
-  }
-
-  .mission__statement__main__text__content h2 {
-    font-size: 3rem;
-  }
-
-  .mission__statement__main__text__content p {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .mission__statement__main__text__content h1 {
-    font-size: 2rem;
-    margin-top: 3rem;
-  }
-
-  .mission__statement__main__text__content h2 {
-    font-size: 2rem;
-  }
-
-  .mission__statement__main__text__content p {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-  }
-  #mission__statement__main__NSBE__LOGO {
-    height: 100%;
-    width: 60%;
   }
 }
 
