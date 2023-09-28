@@ -426,7 +426,7 @@
 
 /* =============================  About Us Updated  ==================================== */ 
 .about__us {
-  background-color: #ffffff;
+  background-color: #961f35;
 }
 
 .about__us__content__container {
@@ -436,7 +436,7 @@
   justify-self: center;
   margin: 0 auto;
   height: auto;
-  background-color: #ffffff;
+  background-color: #961f35;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
@@ -453,7 +453,7 @@
 .about__us__text__content h1 {
   text-align: center;
   font-size: 3rem;
-  background-color: #961f35;
+  background-color: #ffff;
   /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -463,7 +463,7 @@
 }
 
 .about__us__text__content p {
-  color: #141414;
+  color: #ffff;
   text-align: left;
   margin-top: 1rem;
   font-size: 1.5rem;
