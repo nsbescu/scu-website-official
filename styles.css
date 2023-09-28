@@ -483,7 +483,14 @@
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
-  .about__us__content_container {
+  .about__us__content__container {
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: auto;
+    background-color: #ffffff;
   }
 
   .about__us__text__content {
@@ -534,6 +541,7 @@
 
 .mission__statement__container {
   display:flex;
+  flex-direction: row;
   align-items: center;
   justify-self: center;
   margin: 0 auto;
@@ -600,14 +608,21 @@
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
-  .mission__statement__content_container {
-    display: grid;
-    grid-template-columns: auto;
+  .mission__statement__container {
+    display:flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-self: center;
-    width: 100%;
     margin: 0 auto;
     height: auto;
+    background-color: #ffffff;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 
   .mission__statement__main__text__content {
@@ -642,7 +657,7 @@
 
   .mission__statement__main__text__content p {
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   #mission__statement__main__NSBE__LOGO {
     height: 100%;
