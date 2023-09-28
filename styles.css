@@ -216,7 +216,7 @@
 
 /* =============================  MailChimp Student Section  ==================================== */ 
 .mailChimp__student {
-  background-color: #ffffff;
+  background-color: #961f35;
 }
 
 .mailChimp__student__content__container {
@@ -225,22 +225,21 @@
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #961f35;
   width: 100%;
   max-width: 1300px;
-  padding-bottom: 10%;
-  padding-top: 50px;
+  padding-bottom: 5%;
 }
 
 .mailChimp__student__text__content {
-  color: #961f35;
+  color: #fff;
   width: 100%;
 }
 
 .mailChimp__student__text__content h1 {
   text-align: center;
   font-size: 3rem;
-  background-color: #961f35;
+  background-color: #fff;
   /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -248,6 +247,7 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   padding-bottom: 20px;
+  padding-top: 50px;
 }
 
 .mailChimp__student__text__content h2 {
