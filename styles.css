@@ -322,7 +322,7 @@
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 200vh;
+  height: 2500px;
   background-color: #ffffff;
   width: 100%;
   max-width: 1300px;
@@ -371,6 +371,10 @@
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
+  .sponsor__signup__content__container {
+    height: 2800px;
+  }
+
   .sponsor__signup__main__text__content {
     text-align: center;
     margin-bottom: 4rem;
@@ -389,13 +393,13 @@
     margin-top: 1rem;
     font-size: 1.5rem;
   }
-  .sponsor__signup__main__img--container--below {
-    height: 100%;
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 480px) {
+  .sponsor__signup__content__container {
+    height: 3000px;
+  }
+
   .sponsor__signup__main__text__content h1 {
     font-size: 2rem;
     margin-top: 3rem;
@@ -409,19 +413,11 @@
     margin-top: 2rem;
     font-size: 1.5rem;
   }
-
-
-  .sponsor__images____main__img--container {
-    text-align: left;
-    height: auto;
-  }
   
   #sponsor__images____main__img {
     height: 100%;
     width: 100%;
   }
-
-  
 }
 
 /* =============================  About Us Updated  ==================================== */ 
@@ -671,18 +667,19 @@
 }
 
 .sponsor__info__content__container {
-  display: flex;
+  display:flex ;
+  flex-direction: row;
   align-items: center;
   justify-self: center;
-  flex-wrap: wrap;
   margin: 0 auto;
   height: auto;
-  background-color: #ffffff;
+  background-color: #fff;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
   padding-right: 50px;
   padding-left: 50px;
+  padding-bottom: 50px;
   padding-top: 50px;
 }
 
@@ -693,7 +690,7 @@
 
 .sponsor__info__text__content h1 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   background-color: #961f35;
   /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
@@ -722,7 +719,8 @@
   margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: 500;
-  padding-bottom: 50px;
+  padding: 50px 50px;
+  text-align: left;
 }
 
 .sponsor__info__img--container--below {
@@ -730,19 +728,14 @@
 }
 
 #sponsor__info__img {
-  size-adjust: 70%;
+  size-adjust: 90%;
+  max-width: 500px;
 }
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
-  .sponsor__info__content_container {
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-self: center;
-    width: 100%;
-    margin: 0 auto;
-    height: 90vh;
+  .sponsor__info__content__container {
+    flex-direction: column-reverse;
   }
 
   .sponsor__info__text__content {
@@ -984,7 +977,7 @@
   font-size: 3rem;
   background-color: #961f35;
   /* background-image: linear-gradient(to top, #961f35 0%, #fe5196 100%);  this is if I wanted to gradient this box */
-  padding: 8px 40px;
+  padding: 8px 8px;
   border: none;
   border-radius: 6px;
   color: #fff;
@@ -997,12 +990,12 @@
 
 .socialMedia__container {
   background-color: #ffffff;
-  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: auto;
+  
 }
 
 .socialMedia__container h1 {
@@ -1024,6 +1017,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 60px;
 }
 
 .socialMedia__link--items {
