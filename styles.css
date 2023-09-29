@@ -1829,8 +1829,14 @@
   
   .services__card p {
     position: absolute;
-    top: 400px;
-    left: 30px;
+    top: 450px;
+    left: 114px;
+  }
+
+  .services__card:nth-child(2) p {
+    position: absolute;
+    top: 450px;
+    left: 205px;
   }
   
   .services__card button {
