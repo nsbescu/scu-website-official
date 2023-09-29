@@ -224,6 +224,7 @@
   background-color: #961f35;
   width: 100%;
   max-width: 1300px;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 
@@ -663,7 +664,7 @@
 
 /* =============================  Sponsor Info Section  ==================================== */ 
 .sponsor__info {
-  background-color: #ffffff;
+  background-color: #961f35;
 }
 
 .sponsor__info__content__container {
@@ -673,7 +674,7 @@
   justify-self: center;
   margin: 0 auto;
   height: auto;
-  background-color: #fff;
+  background-color: #961f35;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
@@ -691,7 +692,7 @@
 .sponsor__info__text__content h1 {
   text-align: center;
   font-size: 3rem;
-  background-color: #961f35;
+  background-color: #fff;
   /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -704,7 +705,7 @@
   text-align: center;
   font-size: 2.5rem;
   margin-top: 10px;
-  background-color: #141414;
+  background-color: #fff;
   /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -714,7 +715,7 @@
 }
 
 .sponsor__info__text__content p {
-  color: #141414;
+  color: #fff;
   text-align: center;
   margin-top: 1rem;
   font-size: 1.5rem;
@@ -728,7 +729,7 @@
 }
 
 #sponsor__info__img {
-  size-adjust: 90%;
+  width: 100%;
   max-width: 500px;
 }
 
@@ -975,7 +976,7 @@
 
 .socialMedia__btn {
   font-size: 3rem;
-  background-color: #961f35;
+  background-color: #fff;
   /* background-image: linear-gradient(to top, #961f35 0%, #fe5196 100%);  this is if I wanted to gradient this box */
   padding: 8px 8px;
   border: none;
@@ -989,23 +990,29 @@
 }
 
 .socialMedia__container {
-  background-color: #ffffff;
+  background-color: #961f35;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: auto;
+  padding-top: 5%;
   
 }
 
 .socialMedia__container h1 {
   font-size: 4rem;
-  color: #961f35;
+  color: #fff;
+}
+
+.socialMedia__container h2 {
+  font-size: 4rem;
+  color: #fff;
 }
 
 
 #socialMedia__logo {
-  color: #141414;
+  color: #961f35;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -1034,7 +1041,7 @@
 .socialMedia__btn a {
   position: relative;
   z-index: 2;
-  color: #fff;
+  color: #961f35;
   text-decoration: none;
 }
 
