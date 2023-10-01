@@ -1,23 +1,106 @@
- /* =============================  Start of Styles  ==================================== */  
+/* =============================  Start of Styles  ==================================== */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-  }
-/* =============================  Navbar  ==================================== */ 
-  .navbar {
-    background: #ffffff;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+/* =============================  Navbar  ==================================== */
+.navbar {
+  background: #ffffff;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+#navbar__logo {
+  background-color: #961f35;
+  /* background-image: linear-gradient(to top, #961f35 0%, #ffb199 100%); only if i want the logo txt with gradient*/
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar__item {
+  height: 80px;
+}
+
+.navbar__links {
+  color: #141414;
+  display: flex;
+  align-items: center; /* aligning items on the cross axis/ vertical in th middle top to bottom*/
+  justify-content: center; /* aligning items on the main axis left to right  */
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+.navbar__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #961f35;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.button:hover {
+  background: #141414;
+  transition: all 0.5s ease;
+}
+
+.navbar__links:hover {
+  color: #961f35;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 960px) {
   .navbar__container {
     display: flex;
     justify-content: space-between;
@@ -25,192 +108,108 @@
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 0;
   }
-  
-  #navbar__logo {
-    background-color: #961f35;
-    /* background-image: linear-gradient(to top, #961f35 0%, #ffb199 100%); only if i want the logo txt with gradient*/
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-  }
-  
+
   .navbar__menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: -1;
   }
-  
+
+  .navbar__menu.active {
+    background: #ffffff;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 1.6rem;
+  }
+
+  #navbar__logo {
+    padding-left: 25px;
+  }
+
+  .navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #961f35;
+  }
+
   .navbar__item {
-    height: 80px;
-  }
-  
-  .navbar__links {
-    color: #141414;
-    display: flex;
-    align-items: center;  /* aligning items on the cross axis/ vertical in th middle top to bottom*/
-    justify-content: center; /* aligning items on the main axis left to right  */
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
-  }
-  
-  .navbar__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
     width: 100%;
   }
-  
+
+  .navbar__links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navbar__btn {
+    padding-bottom: 2rem;
+  }
+
   .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    background: #961f35;
-    border-radius: 4px;
-    color: #ffffff;
-  }
-  
-  .button:hover {
-    background: #141414;
-    transition: all 0.5s ease;
-  }
-  
-  .navbar__links:hover {
-    color: #961f35;
-    transition: all 0.5s ease;
-  }
-  
-  @media screen and (max-width: 960px) {
-    .navbar__container {
-      display: flex;
-      justify-content: space-between;
-      height: 80px;
-      z-index: 1;
-      width: 100%;
-      max-width: 1300px;
-      padding: 0;
-    }
-  
-    .navbar__menu {
-      display: grid;
-      grid-template-columns: auto;
-      margin: 0;
-      width: 100%;
-      position: absolute;
-      top: -1000px;
-      opacity: 1;
-      transition: all 0.5s ease;
-      height: 50vh;
-      z-index: -1;
-    }
-
-    .navbar__menu.active {
-      background: #ffffff;
-      top: 100%;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 99;
-      height: 50vh;
-      font-size: 1.6rem;
-    }
-  
-    #navbar__logo {
-      padding-left: 25px;
-    }
-  
-    .navbar__toggle .bar {
-      width: 25px;
-      height: 3px;
-      margin: 5px auto;
-      transition: all 0.3s ease-in-out;
-      background: #961f35;
-    }
-  
-    .navbar__item {
-      width: 100%;
-    }
-  
-    .navbar__links {
-      text-align: center;
-      padding: 2rem;
-      width: 100%;
-      display: table;
-    }
-  
-    .navbar__btn {
-      padding-bottom: 2rem;
-    }
-  
-    .button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 80%;
-      height: 80px;
-      margin: 0;
-    }
-  
-    #mobile-menu {
-      position: absolute;
-      top: 20%;
-      right: 5%;
-      transform: translate(5%, 20%);
-    }
-  
-    .navbar__toggle .bar {
-      display: block;
-      cursor: pointer;
-    }
-  
-    /* Initial state for the bars */
-    #mobile-menu .bar:nth-child(1) {
-      transform: translateY(0) rotate(0deg);
-    }
-
-    #mobile-menu .bar:nth-child(2) {
-      opacity: 1;
-    }
-
-    #mobile-menu .bar:nth-child(3) {
-      transform: translateY(0) rotate(0deg);
-    }
-
-    /* Transition State once clicked */
-    #mobile-menu.is-active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-
-    #mobile-menu.is-active .bar:nth-child(2) {
-      opacity: 0;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-    
+    width: 80%;
+    height: 80px;
+    margin: 0;
   }
 
-/* =============================  MailChimp Student Section  ==================================== */ 
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .navbar__toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Initial state for the bars */
+  #mobile-menu .bar:nth-child(1) {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  #mobile-menu .bar:nth-child(2) {
+    opacity: 1;
+  }
+
+  #mobile-menu .bar:nth-child(3) {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  /* Transition State once clicked */
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* =============================  MailChimp Student Section  ==================================== */
 .mailChimp__student {
   background-color: #961f35;
 }
@@ -275,7 +274,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .mailChimp__student__text__content {
     text-align: center;
     margin-bottom: 4rem;
@@ -312,14 +310,14 @@
   }
 }
 
-/* =============================  Sponsor Sign Up Embed  ==================================== */ 
+/* =============================  Sponsor Sign Up Embed  ==================================== */
 .sponsor__signup {
   background-color: #ffffff;
 }
 
 .sponsor__signup__content__container {
   flex-direction: column;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-self: center;
   margin: 0 auto;
@@ -414,20 +412,20 @@
     margin-top: 2rem;
     font-size: 1.5rem;
   }
-  
+
   #sponsor__images____main__img {
     height: 100%;
     width: 100%;
   }
 }
 
-/* =============================  About Us Updated  ==================================== */ 
+/* =============================  About Us Updated  ==================================== */
 .about__us {
   background-color: #961f35;
 }
 
 .about__us__content__container {
-  display:flex ;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-self: center;
@@ -481,7 +479,7 @@
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .about__us__content__container {
-    display:flex ;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-self: center;
@@ -531,13 +529,13 @@
   }
 }
 
-/* =============================  Mission Statement Updated  ==================================== */ 
+/* =============================  Mission Statement Updated  ==================================== */
 .mission__statement {
   background-color: #ffffff;
 }
 
 .mission__statement__container {
-  display:flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-self: center;
@@ -568,7 +566,6 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-
 }
 
 .mission__statement__main__text__content h2 {
@@ -606,7 +603,7 @@
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .mission__statement__container {
-    display:flex;
+    display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-self: center;
@@ -662,13 +659,13 @@
   }
 }
 
-/* =============================  Sponsor Info Section  ==================================== */ 
+/* =============================  Sponsor Info Section  ==================================== */
 .sponsor__info {
   background-color: #961f35;
 }
 
 .sponsor__info__content__container {
-  display:flex ;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-self: center;
@@ -758,7 +755,6 @@
   }
   #sponsor__info__img {
     width: 80%;
-  
   }
 }
 
@@ -779,10 +775,9 @@
   }
 }
 
-/* =============================  Google Calendar Section  ==================================== */ 
+/* =============================  Google Calendar Section  ==================================== */
 .google__calendars {
   background-color: #ffffff;
-  
 }
 
 .calendar__content__container {
@@ -816,16 +811,15 @@
   border: none; /* Remove iframe border */
 }
 
-.addCalendar__button { 
+.addCalendar__button {
   text-align: center;
 }
 
 .calendar__text__content {
   color: #961f35;
-  
 }
 
-.calendar__content__container  h1 {
+.calendar__content__container h1 {
   text-align: center;
   font-size: 4rem;
   background-color: #961f35;
@@ -837,7 +831,7 @@
   -moz-text-fill-color: transparent;
 }
 
-.calendar__content__container  h2 {
+.calendar__content__container h2 {
   text-align: center;
   font-size: 0rem;
   margin-top: 10px;
@@ -850,7 +844,7 @@
   -moz-text-fill-color: transparent;
 }
 
-.calendar__content__container  p {
+.calendar__content__container p {
   color: #141414;
   text-align: center;
   margin-top: 1rem;
@@ -861,11 +855,10 @@
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
-  .calendar__content__container  h1 {
+  .calendar__content__container h1 {
     font-size: 2.5rem;
-    
   }
-  .calendar__content__container  h2 {
+  .calendar__content__container h2 {
     text-align: center;
     font-size: 1rem;
     background-color: #141414;
@@ -884,7 +877,7 @@
     font-size: 2rem;
   }
 
-  .calendar__content__container  h2 {
+  .calendar__content__container h2 {
     text-align: center;
     font-size: 1rem;
     margin-top: 10px;
@@ -923,7 +916,7 @@
 
 .addToCalendar__btn:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 0;
@@ -941,7 +934,6 @@
   width: 100%;
 }
 
-
 /* Mobile Responsive */
 @media screen and (max-width: 480px) {
   .addToCalendar__btn {
@@ -950,7 +942,7 @@
   }
 }
 
-/* =============================  ContactUs Help Styles  ==================================== */ 
+/* =============================  ContactUs Help Styles  ==================================== */
 
 .contactUs__help {
   background: #fff;
@@ -965,11 +957,11 @@
   align-items: center;
   height: auto;
 }
-.contactUs__help__container h1{
+.contactUs__help__container h1 {
   font-size: 3rem;
   color: #961f35;
 }
-/* =============================  Social Media Links -- Chapter Resources Page  ==================================== */ 
+/* =============================  Social Media Links -- Chapter Resources Page  ==================================== */
 .socialMedia__elemnents {
   background-color: #fff;
 }
@@ -997,7 +989,6 @@
   align-items: center;
   height: auto;
   padding-top: 5%;
-  
 }
 
 .socialMedia__container h1 {
@@ -1009,7 +1000,6 @@
   font-size: 4rem;
   color: #fff;
 }
-
 
 #socialMedia__logo {
   color: #961f35;
@@ -1047,7 +1037,7 @@
 
 .socialMedia__btn:after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 0;
@@ -1075,13 +1065,12 @@
     padding-left: 30px;
     padding-right: 30px;
   }
-  
+
   .socialMedia__container h1 {
     font-size: 3rem;
     color: #961f35;
   }
 }
-
 
 @media screen and (max-width: 480px) {
   .socialMedia__btn {
@@ -1097,7 +1086,7 @@
   }
 }
 
-/* =============================  Right Stacked Content  ==================================== */ 
+/* =============================  Right Stacked Content  ==================================== */
 .stacked__main {
   background-color: #ffffff;
 }
@@ -1166,7 +1155,6 @@
   width: 90%;
 }
 
-
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .rstacked__main__container {
@@ -1187,49 +1175,42 @@
     margin-bottom: 4rem;
   }
 
-.lstacked__main__content h1 {
-  font-size: 2.5rem;
-  
-}
+  .lstacked__main__content h1 {
+    font-size: 2.5rem;
+  }
 
-.lstacked__main__content h2 {
-  font-size: 2.5rem;
-  
-}
+  .lstacked__main__content h2 {
+    font-size: 2.5rem;
+  }
 
-.lstacked__main__content p {
-  font-size: 1.5rem;
-}
-
+  .lstacked__main__content p {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .lstacked__main__content h1 {
+    font-size: 2rem;
+  }
 
+  .lstacked__main__content h2 {
+    font-size: 2rem;
+  }
 
-.lstacked__main__content h1 {
-  font-size: 2rem;
-  
-}
-
-.lstacked__main__content h2 {
-  font-size: 2rem;
-  
-}
-
-.lstacked__main__content p {
-  font-size: 1rem;
-}
+  .lstacked__main__content p {
+    font-size: 1rem;
+  }
 }
 
 /* =============================  Sponsorship Package Styles  ==================================== */
 
-.sponsor__package { 
+.sponsor__package {
   background-color: #ffffff;
 }
 
-.sponsor__package__container { 
+.sponsor__package__container {
   flex-direction: column;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-self: center;
   margin: 0 auto;
@@ -1243,13 +1224,13 @@
   padding-top: 50px;
 }
 
-.sponsor__package__container__text  {
+.sponsor__package__container__text {
   padding-bottom: 50px;
   color: #961f35;
   width: 100%;
 }
 
-.sponsor__package__container__text h1 { 
+.sponsor__package__container__text h1 {
   text-align: center;
   font-size: 4rem;
   background-color: #961f35;
@@ -1261,7 +1242,7 @@
   -moz-text-fill-color: transparent;
 }
 
-.sponsor__package__container__img { 
+.sponsor__package__container__img {
   text-align: center;
 }
 
@@ -1272,7 +1253,7 @@
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
-  .sponsor__package__container__text h1 { 
+  .sponsor__package__container__text h1 {
     font-size: 3rem;
   }
 
@@ -1282,7 +1263,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .sponsor__package__container__text h1 { 
+  .sponsor__package__container__text h1 {
     font-size: 2.5rem;
   }
   #sponsorship__package {
@@ -1290,8 +1271,7 @@
   }
 }
 
-
-/* =============================  Left Stacked Content  ==================================== */ 
+/* =============================  Left Stacked Content  ==================================== */
 .board__message {
   background-color: #ffffff;
 }
@@ -1300,7 +1280,7 @@
   display: flex;
   justify-content: space-evenly; /* place the two sub containers evently on the screen */
 
-  align-items: center; /* align on the cross axis */ 
+  align-items: center; /* align on the cross axis */
   justify-self: center;
 
   margin: 0 auto;
@@ -1313,7 +1293,6 @@
   padding-right: 25px;
   padding-left: 25px;
   padding-bottom: 50px;
-
 }
 
 /* ------------------------ text styles --------------*/
@@ -1367,7 +1346,6 @@
   width: 90%;
 }
 
-
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .board__message__container {
@@ -1377,15 +1355,14 @@
   .board__message__content h1 {
     font-size: 3rem;
   }
-  
+
   .board__message__content h2 {
     font-size: 2.5rem;
   }
-  
+
   .board__message__content p {
     font-size: 1.5rem;
   }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -1395,241 +1372,241 @@
   .board__message__content h1 {
     font-size: 3rem;
   }
-  
+
   .board__message__content h2 {
     font-size: 2rem;
   }
-  
+
   .board__message__content p {
     font-size: 1rem;
   }
 }
 
-/* =============================  Main Hero Content  ==================================== */ 
-  .main {
-    background-color: #961f35;
-  }
-  
+/* =============================  Main Hero Content  ==================================== */
+.main {
+  background-color: #961f35;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 68vh;
+  background-color: #961f35;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.main__content {
+  color: #961f35;
+  width: 100%;
+}
+
+.main__content h1 {
+  font-size: 4rem;
+  background-color: #fff;
+  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main__content h2 {
+  font-size: 3rem;
+  margin-top: 10px;
+  background-color: #fff;
+  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main__content p {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main__btn {
+  font-size: 1rem;
+  background-color: #fff;
+  /* background-image: linear-gradient(to top, #961f35 0%, #fe5196 100%);  this is if I wanted to gradient this box */
+  padding: 14px 32px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.main__btn a {
+  position: relative;
+  z-index: 2;
+  color: #961f35;
+  text-decoration: none;
+}
+
+.main__btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #141414;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.main__btn:hover {
+  color: #fff;
+}
+
+.main__btn:hover:after {
+  width: 100%;
+}
+
+.main__img--container {
+  text-align: center;
+}
+
+#main__img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
   .main__container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto;
     align-items: center;
     justify-self: center;
+    width: 100%;
     margin: 0 auto;
-    height: 68vh;
-    background-color: #961f35;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding-right: 50px;
-    padding-left: 50px;
+    height: 90vh;
   }
-  
+
   .main__content {
-    color: #961f35;
-    width: 100%;
-  }
-  
-  .main__content h1 {
-    font-size: 4rem;
-    background-color: #fff;
-    /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-  
-  .main__content h2 {
-    font-size: 3rem;
-    margin-top: 10px;
-    background-color: #fff;
-    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-  }
-  
-  .main__content p {
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  
-  .main__btn {
-    font-size: 1rem;
-    background-color: #fff;
-    /* background-image: linear-gradient(to top, #961f35 0%, #fe5196 100%);  this is if I wanted to gradient this box */
-    padding: 14px 32px;
-    border: none;
-    border-radius: 6px;
-    color: #fff;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-    outline: none;
-  }
-  
-  .main__btn a {
-    position: relative;
-    z-index: 2;
-    color: #961f35;
-    text-decoration: none;
-  }
-  
-  .main__btn:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #141414;
-    transition: all 0.35s;
-    border-radius: 4px;
-  }
-  
-  .main__btn:hover {
-    color: #fff;
-  }
-  
-  .main__btn:hover:after {
-    width: 100%;
-  }
-  
-  .main__img--container {
     text-align: center;
-  }
-  
-  #main__img {
-    height: 100%;
-    width: 100%;
+    margin-bottom: 4rem;
   }
 
-  /* Mobile Responsive */
-  @media screen and (max-width: 768px) {
-    .main__container {
-      display: grid;
-      grid-template-columns: auto;
-      align-items: center;
-      justify-self: center;
-      width: 100%;
-      margin: 0 auto;
-      height: 90vh;
-    }
-  
-    .main__content {
-      text-align: center;
-      margin-bottom: 4rem;
-    }
-  
-    .main__content h1 {
-      font-size: 3rem;
-      margin-top: 2rem;
-    }
-  
-    .main__content h2 {
-      font-size: 2.5rem;
-    }
-  
-    .main__content p {
-      margin-top: 1rem;
-      font-size: 1.5rem;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .main__content h1 {
-      font-size: 2rem;
-      margin-top: 3rem;
-    }
-  
-    .main__content h2 {
-      font-size: 2rem;
-    }
-  
-    .main__content p {
-      margin-top: 2rem;
-      font-size: 1.5rem;
-    }
-  
-    .main__btn {
-      padding: 12px 36px;
-      margin: 2.5rem 0;
-    }
+  .main__content h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
   }
 
-  /* "General Body Meeting" - Information Section */ 
-
-  .gen_body_information { 
-    background: #ffffff;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-  }
-
-  .gen_body_information h1 {
-    background-color: #961f35;
-    color: #961f35;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    margin-bottom: 1rem;
+  .main__content h2 {
     font-size: 2.5rem;
   }
 
-  .gen_body_information h2 {
-    background-color: #141414;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    margin-bottom: 1rem;
+  .main__content p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main__content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .main__content h2 {
+    font-size: 2rem;
+  }
+
+  .main__content p {
+    margin-top: 2rem;
     font-size: 1.5rem;
   }
 
-  @media screen and (max-width: 960px) {
-    .gen_body_information {
-      height: 300px;
-    }
-  
-    .gen_body_information h1 {
-      font-size: 2rem;
-      margin-top: 4rem;
-    }
-
-    .gen_body_information h1 {
-      font-size: 2rem;
-      margin-top: 4rem;
-    }
+  .main__btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
   }
-  
-  @media screen and (max-width: 480px) {
-    .gen_body_information {
-      height: 300px;
-    }
-  
-    .gen_body_information h1 {
-      font-size: 2rem;
-      margin-top: 4rem;
-    }
+}
 
-    .gen_body_information h1 {
-      font-size: 2rem;
-      margin-top: 4rem;
-    }
+/* "General Body Meeting" - Information Section */
+
+.gen_body_information {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.gen_body_information h1 {
+  background-color: #961f35;
+  color: #961f35;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.gen_body_information h2 {
+  background-color: #141414;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 960px) {
+  .gen_body_information {
+    height: 300px;
   }
-  
-/* =============================  Welcome Section  ==================================== */ 
+
+  .gen_body_information h1 {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  .gen_body_information h1 {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gen_body_information {
+    height: 300px;
+  }
+
+  .gen_body_information h1 {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  .gen_body_information h1 {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+}
+
+/* =============================  Welcome Section  ==================================== */
 
 /* Create a container for the layout */
 .container {
@@ -1682,369 +1659,364 @@
   height: auto; /* Maintain aspect ratio */
 }
 
+/* =============================  Chapter Stats Section  ==================================== */
+.stats__container {
+  background-color: #141414;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+#stats__logo {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
 
-/* =============================  Chapter Stats Section  ==================================== */ 
-  .stats__container {
-    background-color: #141414;
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #stats__logo {
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2.5rem;
-  }
-  
+.stats__links {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+}
+
+.stats__link--wrapper {
+  display: flex;
+}
+
+.stats__link--items {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items vertically */
+  text-align: center;
+  margin: 14px;
+  width: 140px;
+}
+
+.icon__stats {
+  text-align: center;
+}
+
+.stats__link--items h2 {
+  margin-bottom: 8px;
+}
+
+.stats__link--items > h2 {
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+.stats__link--items p {
+  color: white;
+}
+
+.stats__link--items a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 920px) {
   .stats__links {
-    width: 100%;
-    max-width: 1300px;
-    display: flex;
-    justify-content: center;
+    padding-top: 2rem;
   }
-  
+
+  #stats__logo {
+    margin-bottom: 2rem;
+  }
+
   .stats__link--wrapper {
-    display: flex;
+    flex-direction: column;
   }
-  
+
+  .social__media--wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .stats__link--items {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items vertically */
-    text-align: center;
-    margin: 14px;
-    width: 140px;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
   }
+}
 
-  .icon__stats {
-    text-align: center;
-  }
-  
-  .stats__link--items h2 {
-    margin-bottom: 8px;
-  }
-  
-  .stats__link--items > h2 {
-    color: #ffffff;
-    padding-top: 10px;
-  }
+/* =============================  Services Card  ==================================== */
+.services {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.services h1 {
+  background-color: #961f35;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
 
-  .stats__link--items p { 
-    
-    color: white; 
-  }
-  
-  .stats__link--items a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  @media screen and (max-width: 920px) {
-    .stats__links {
-      padding-top: 2rem;
-    }
-  
-    #stats__logo {
-      margin-bottom: 2rem;
-    }
+.services__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-    .stats__link--wrapper {
-      flex-direction: column;
-    }
-  
-    .social__media--wrap {
-      flex-direction: column;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .stats__link--items {
-      margin: 0;
-      padding: 10px;
-      width: 100%;
-    }
-  }
+.services__card:before {
+  opacity: 0.2;
+}
 
-/* =============================  Services Card  ==================================== */ 
+.services__card {
+  margin: 1rem;
+  height: 525px;
+  width: 400px;
+  border-radius: 4px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url("/images/scdiCortyardPic.jpg");
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+.services__card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.9) 100%
+    ),
+    url("/images/NSBE49ConventionPic.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.services__card h2 {
+  position: absolute;
+  top: 450px;
+  left: 30px;
+}
+
+.services__card p {
+  position: absolute;
+  top: 450px;
+  left: 114px;
+}
+
+.services__card:nth-child(2) p {
+  position: absolute;
+  top: 450px;
+  left: 205px;
+}
+
+.services__card button {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: transparent;
+  position: absolute;
+  top: 440px;
+  left: 30px;
+  font-size: 1rem;
+}
+
+.service__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.services__card button:hover {
+  cursor: pointer;
+}
+
+.services__card:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
   .services {
-    
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    height: 1600px;
   }
+
   .services h1 {
-    background-color: #961f35;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-top: 2rem;
   }
-  
-  .services__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    height: 1400px;
   }
-  
-  .services__card:before {
-    opacity: 0.2;
+
+  .services h1 {
+    font-size: 2rem;
+    text-align: center;
   }
 
   .services__card {
-    margin: 1rem;
-    height: 525px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-      ),
-      url('/images/scdiCortyardPic.jpg');
-    background-size: cover;
-    position: relative;
-    color: #fff;
+    width: 300px;
   }
-  
-  .services__card:nth-child(2) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.9) 100%
-      ),url('/images/NSBE49ConventionPic.jpg');
-      background-position: center;
-      background-size: cover;
-      
-  }
-  
-  .services__card h2 {
-    position: absolute;
-    top: 450px;
-    left: 30px;
-  }
-  
-  .services__card p {
-    position: absolute;
-    top: 450px;
-    left: 114px;
-  }
+}
 
-  .services__card:nth-child(2) p {
-    position: absolute;
-    top: 450px;
-    left: 205px;
-  }
-  
-  .services__card button {
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: transparent;
-    position: absolute;
-    top: 440px;
-    left: 30px;
-    font-size: 1rem;
-  }
+/* =============================  Footer Section  ==================================== */
+.footer__container {
+  background-color: #961f35;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .service__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    color: #fff;
-  }
-  
-  .services__card button:hover {
-    cursor: pointer;
-  }
-  
-  .services__card:hover {
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-  }
-  
-  @media screen and (max-width: 960px) {
-    .services {
-      height: 1600px;
-    }
-  
-    .services h1 {
-      font-size: 2rem;
-      margin-top: 2rem;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .services {
-      height: 1400px;
-    }
-  
-    .services h1 {
-      font-size: 2rem;
-      text-align: center;
-    }
-  
-    .services__card {
-      width: 300px;
-    }
-  }
-  
-/* =============================  Footer Section  ==================================== */ 
-  .footer__container {
-    background-color: #961f35;
-    padding: 5rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #footer__logo {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-  }
-  
+#footer__logo {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.footer__links {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__link--wrapper {
+  display: flex;
+}
+
+.footer__link--items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
+}
+
+.footer__link--items h2 {
+  margin-bottom: 16px;
+}
+
+.footer__link--items > h2 {
+  color: #fff;
+}
+
+.footer__link--items a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer__link--items a:hover {
+  color: #141414;
+  transition: 0.3s ease-out;
+}
+
+/* Social Icons */
+.social__icon--link {
+  color: #141414;
+  font-size: 34px;
+}
+
+.social__media {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #961f35;
+}
+
+.social__media--wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
+
+.social__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+
+.social__logo {
+  color: #ffff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.website__rights {
+  color: #ffff;
+}
+
+@media screen and (max-width: 820px) {
   .footer__links {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
+    padding-top: 2rem;
   }
-  
-  .footer__link--wrapper {
-    display: flex;
+
+  #footer__logo {
+    margin-bottom: 2rem;
   }
-  
-  .footer__link--items {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 16px;
-    text-align: left;
-    width: 160px;
-    box-sizing: border-box;
-  }
-  
-  .footer__link--items h2 {
-    margin-bottom: 16px;
-  }
-  
-  .footer__link--items > h2 {
-    color: #fff;
-  }
-  
-  .footer__link--items a {
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 0.5rem;
-  }
-  
-  .footer__link--items a:hover {
-    color: #141414;
-    transition: 0.3s ease-out;
-  }
-  
-  /* Social Icons */
-  .social__icon--link {
-    color: #141414;
-    font-size: 34px;
-  }
-  
-  .social__media {
-    max-width: 1000px;
-    width: 100%;
-    background-color: #961f35;
-  }
-  
-  .social__media--wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1000px;
-    margin: 40px auto 0 auto;
-  }
-  
-  .social__icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-  }
-  
-  .social__logo {
-    color: #ffff;
-    justify-self: start;
-    margin-left: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-  }
-  
+
   .website__rights {
-    color: #ffff;
-  }
-  
-  @media screen and (max-width: 820px) {
-    .footer__links {
-      padding-top: 2rem;
-    }
-  
-    #footer__logo {
-      margin-bottom: 2rem;
-    }
-  
-    .website__rights {
-      margin-bottom: 2rem;
-    }
-  
-    .footer__link--wrapper {
-      flex-direction: column;
-    }
-  
-    .social__media--wrap {
-      flex-direction: column;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .footer__link--items {
-      margin: 1;
-      padding: 10px;
-      width: 100%;
-    }
+    margin-bottom: 2rem;
   }
 
+  .footer__link--wrapper {
+    flex-direction: column;
+  }
 
-/* =============================  End of Styles  ==================================== */ 
+  .social__media--wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer__link--items {
+    margin: 1;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+/* =============================  End of Styles  ==================================== */
