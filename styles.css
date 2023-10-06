@@ -1,11 +1,13 @@
-/* =============================  Start of Styles  ==================================== */
+/* =============================  General Site CSS Styles ==================================== */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-/* =============================  Navbar  ==================================== */
+/* =============================  Navbar CSS Styles  ==================================== */
+
 .navbar {
   background: #ffffff;
   height: 80px;
@@ -209,7 +211,8 @@
   }
 }
 
-/* =============================  MailChimp Student Section  ==================================== */
+/* =============================  Student/Members Portal MailChimp Student CSS Styles  ==================================== */
+
 .mailChimp__student {
   background-color: #961f35;
 }
@@ -310,7 +313,8 @@
   }
 }
 
-/* =============================  Sponsor Sign Up Embed  ==================================== */
+/* =============================  Google Form - Sponsor Sign Up CSS Styles  ==================================== */
+
 .sponsor__signup {
   background-color: #ffffff;
 }
@@ -419,7 +423,8 @@
   }
 }
 
-/* =============================  About Us Updated  ==================================== */
+/* =============================  About Us CSS Styles  ==================================== */
+
 .about__us {
   background-color: #961f35;
 }
@@ -529,7 +534,8 @@
   }
 }
 
-/* =============================  Mission Statement Updated  ==================================== */
+/* =============================  Mission Statement CSS Styles ==================================== */
+
 .mission__statement {
   background-color: #ffffff;
 }
@@ -659,7 +665,8 @@
   }
 }
 
-/* =============================  Sponsor Info Section  ==================================== */
+/* =============================  Sponsor Info CSS Styles  ==================================== */
+
 .sponsor__info {
   background-color: #961f35;
 }
@@ -775,7 +782,8 @@
   }
 }
 
-/* =============================  Google Calendar Section  ==================================== */
+/* =============================  Google Calendar Container CSS Styles  ==================================== */
+
 .google__calendars {
   background-color: #ffffff;
 }
@@ -942,7 +950,7 @@
   }
 }
 
-/* =============================  ContactUs Help Styles  ==================================== */
+/* =============================  Contact Us / Help CSS Styles  ==================================== */
 
 .contactUs__help {
   background: #fff;
@@ -961,7 +969,8 @@
   font-size: 3rem;
   color: #961f35;
 }
-/* =============================  Social Media Links -- Chapter Resources Page  ==================================== */
+/* =============================  Social Media Links -- Members / Student Portal Page CSS Styles  ==================================== */
+
 .socialMedia__elemnents {
   background-color: #fff;
 }
@@ -1086,7 +1095,8 @@
   }
 }
 
-/* =============================  Right Stacked Content  ==================================== */
+/* =============================  Alumni Message CSS Styles ==================================== */
+
 .stacked__main {
   background-color: #ffffff;
 }
@@ -1202,7 +1212,7 @@
   }
 }
 
-/* =============================  Sponsorship Package Styles  ==================================== */
+/* =============================  Sponsorship Package CSS Styles  ==================================== */
 
 .sponsor__package {
   background-color: #ffffff;
@@ -1271,7 +1281,8 @@
   }
 }
 
-/* =============================  Left Stacked Content  ==================================== */
+/* =============================  Board Message CSS Styles  ==================================== */
+
 .board__message {
   background-color: #ffffff;
 }
@@ -1295,7 +1306,6 @@
   padding-bottom: 50px;
 }
 
-/* ------------------------ text styles --------------*/
 .board__message__content {
   color: #961f35;
   width: 100%;
@@ -1331,8 +1341,6 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
-
-/* ------------------------ text styles --------------*/
 
 .board__message__img--container {
   text-align: left;
@@ -1382,7 +1390,8 @@
   }
 }
 
-/* =============================  Main Hero Content  ==================================== */
+/* =============================  Welcome - SCU Landing Page CSS Styles ==================================== */
+
 .main {
   background-color: #961f35;
 }
@@ -1540,7 +1549,7 @@
   }
 }
 
-/* "General Body Meeting" - Information Section */
+/* =============================  General Body Meeting Info CSS Styles ==================================== */
 
 .gen_body_information {
   background: #ffffff;
@@ -1606,60 +1615,8 @@
   }
 }
 
-/* =============================  Welcome Section  ==================================== */
+/* =============================  Chapter Stats CSS Styles  ==================================== */
 
-/* Create a container for the layout */
-.container {
-  display: flex;
-}
-
-/* Style for the left column */
-.left-column {
-  flex: 1;
-  padding: 2%; /* Add some padding around the left column */
-}
-
-/* Style for the left image container to make it responsive */
-.photo-text img {
-  max-width: 100%; /* Ensure the image does not exceed its container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.goal-box {
-  background-color: #961f35;
-  border-radius: 4px;
-  color: #fff;
-  padding: 2%; /* Add some padding around the text boxes */
-  margin-top: 2%; /* Add some margin between text boxes */
-}
-
-.text-box {
-  background-color: #ffffff;
-  padding: 2%; /* Add some padding around the text boxes */
-  margin-top: 2%; /* Add some margin between text boxes */
-}
-
-/* Style for the right column */
-.right-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column; /* Stack photos vertically */
-  padding: 2%; /* Add some padding around the right column */
-  gap: 2%; /* Add some gap between photos */
-}
-
-/* Style for photo containers to make them responsive */
-.photo {
-  max-width: 100%; /* Ensure the photo does not exceed its container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.photo img {
-  max-width: 100%; /* Ensure the image does not exceed its container */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* =============================  Chapter Stats Section  ==================================== */
 .stats__container {
   background-color: #141414;
   padding: 2rem 0;
@@ -1746,7 +1703,8 @@
   }
 }
 
-/* =============================  Services Card  ==================================== */
+/* =============================  Join Us / Stay Connected CSS Styles   ==================================== */
+
 .services {
   background: #ffffff;
   display: flex;
@@ -1886,7 +1844,8 @@
   }
 }
 
-/* =============================  Footer Section  ==================================== */
+/* =============================  Global Footer Styles  ==================================== */
+
 .footer__container {
   background-color: #961f35;
   padding: 5rem 0;
@@ -2019,4 +1978,4 @@
   }
 }
 
-/* =============================  End of Styles  ==================================== */
+/* =============================  End of CSS Styles  ==================================== */
