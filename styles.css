@@ -1100,6 +1100,50 @@
   }
 }
 
+/* =============================  Professional Development Resources  ==================================== */
+
+.professional__development {
+  background-color: transparent;
+}
+
+.professional__development__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #961f35;
+}
+
+.professional__development__container__title h1 {
+  padding: 25px 25px;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.professional__development__container__title h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.pd__image {
+  width: 65%; /* Adjust the width for the image */
+  border-radius: 8px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#resume__imgae {
+  width: 50%;
+  border-radius: 8px;
+}
+
 /* =============================  Contact Us / Help CSS Styles  ==================================== */
 
 .contactUs__help {
