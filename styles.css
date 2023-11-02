@@ -130,9 +130,9 @@
     background: #ffffff;
     top: 100%;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     z-index: 99;
-    height: 50vh;
+    height: 65vh;
     font-size: 1.6rem;
   }
 
@@ -144,7 +144,7 @@
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.7s ease-in-out;
     background: #961f35;
   }
 
@@ -1309,7 +1309,7 @@
   padding-top: 50px;
   padding-right: 50px;
   padding-left: 50px;
-  padding-bottom: 650px;
+  padding-bottom: 700px;
 }
 
 .lstacked__main__content {
@@ -1348,6 +1348,13 @@
   font-weight: 700;
 }
 
+.rstacked__main__content h1 {
+  font-size: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
 .rstacked__main__img--container {
   text-align: center;
   height: auto;
@@ -1357,26 +1364,22 @@
   flex-direction: column;
   height: 90%;
   width: 90%;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
-  .rstacked__main__container {
-    display: grid;
-    grid-template-columns: auto;
+  .stacked__main__container {
+    display: flex;
     align-items: center;
     justify-self: center;
-    width: 100%;
-    margin: 0 auto;
-    height: 80vh;
+    flex-direction: column;
+    height: auto;
+    background-color: #ffffff;
   }
   .stacked__main__container {
-    padding-bottom: 100px;
-  }
-
-  .rstacked__main__content {
-    text-align: center;
-    margin-bottom: 4rem;
+    padding-bottom: 25px;
   }
 
   .lstacked__main__content h1 {
@@ -1389,6 +1392,7 @@
 
   .lstacked__main__content p {
     font-size: 1.5rem;
+    padding-bottom: 25px;
   }
 }
 
@@ -1403,6 +1407,7 @@
 
   .lstacked__main__content p {
     font-size: 1rem;
+    padding-bottom: 25px;
   }
 }
 
@@ -1484,20 +1489,24 @@
 .board__message__container {
   display: flex;
   justify-content: space-evenly; /* place the two sub containers evently on the screen */
-
   align-items: center; /* align on the cross axis */
   justify-self: center;
-
   margin: 0 auto;
   height: auto;
   background-color: #ffffff;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-right: 25px;
   padding-left: 25px;
   padding-bottom: 50px;
+}
+
+.board__message__img--container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 25px;
 }
 
 .board__message__content {
@@ -1506,6 +1515,7 @@
 }
 
 .board__message__content h1 {
+  padding-top: 25px;
   font-size: 2rem;
   background-color: #961f35;
   /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
@@ -1534,12 +1544,14 @@
   margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
+  text-align: left;
 }
 
 .board__message__img--container {
-  text-align: left;
   height: auto;
-  width: 95%;
+  align-items: center;
+  width: 90%;
+  text-align: center;
 }
 
 #board__message__img {
@@ -1551,7 +1563,12 @@
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .board__message__container {
-    padding-top: 50%;
+    display: flex;
+    align-items: center; /* align on the cross axis */
+    justify-self: center;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    margin: 0 auto;
   }
 
   .board__message__content h1 {
@@ -1596,13 +1613,12 @@
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 68vh;
+  height: auto;
   background-color: #961f35;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding: 50px 50px 50px 50px;
 }
 
 .main__content {
@@ -1693,13 +1709,17 @@
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .main__container {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-self: center;
-    width: 100%;
     margin: 0 auto;
-    height: 90vh;
+    height: auto;
+    background-color: #961f35;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 50px 50px 50px 50px;
   }
 
   .main__content {
@@ -1906,8 +1926,8 @@
   justify-content: center;
   align-items: center;
   height: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .services h1 {
   background-color: #961f35;
@@ -2014,12 +2034,13 @@
 
 @media screen and (max-width: 960px) {
   .services {
-    height: 1600px;
+    height: auto;
   }
 
   .services h1 {
     font-size: 2rem;
     margin-top: 2rem;
+    text-align: center;
   }
 }
 
