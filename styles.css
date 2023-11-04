@@ -535,7 +535,7 @@
 
 /* =============================  Mission Statement CSS Styles ==================================== */
 
-.mission__statement {
+.mission__statement__container {
   background-color: #ffffff;
 }
 
@@ -664,6 +664,150 @@
   }
 }
 
+/* =============================  Current Board CSS Styles ==================================== */
+
+.current__board {
+  background-color: #ffffff;
+}
+
+.current__board__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: auto;
+  background-color: #ffffff;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.current__board__container__header {
+  display: flex;
+  justify-content: center;
+}
+
+.current__board__container__header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.current__board__main__text__content {
+  color: #961f35;
+  width: 100%;
+}
+
+.current__board__main__text__content h1 {
+  text-align: center;
+  font-size: 3rem;
+  background-color: #961f35;
+  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.current__board__main__text__content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  background-color: #141414;
+  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.current__board__main__text__content p {
+  color: #141414;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.current__board__main__img--container--below {
+  text-align: center;
+  overflow: hidden;
+
+  height: 200px;
+  width: 300px;
+}
+
+#current__board__main__NSBE__LOGO {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .current__board__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: auto;
+    background-color: #ffffff;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .current__board__main__text__content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .current__board__main__text__content h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .current__board__main__text__content h2 {
+    font-size: 3rem;
+  }
+
+  .current__board__main__text__content p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .current__board__main__text__content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .current__board__main__text__content h2 {
+    font-size: 2rem;
+  }
+
+  .current__board__main__text__content p {
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+  #current__board__main__NSBE__LOGO {
+    height: 100%;
+    width: 60%;
+  }
+}
 /* =============================  Sponsor Info CSS Styles  ==================================== */
 
 .sponsor__info {
