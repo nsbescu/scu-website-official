@@ -1602,6 +1602,8 @@
 #sponsorship__package {
   height: 100%;
   width: 100%;
+  border: solid 3px black;
+  border-radius: 5px;
 }
 
 /* Mobile Responsive */
@@ -1916,6 +1918,98 @@
   display: flex;
   width: 100%;
   height: 100%;
+}
+
+/* =============================   Dontation Container CSS Styles  ==================================== */
+
+.donation {
+  background: transparent;
+}
+.donation-conainter {
+  background: transparent;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.donation-container-text {
+  padding-bottom: 25px;
+}
+.donation-conainter h1 {
+  font-size: 3rem;
+  color: #961f35;
+  padding-bottom: 25px;
+}
+
+.donation-conainter h2 {
+  font-size: 1.5rem;
+  color: grey;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.donation-conainter h3 {
+  font-size: 1.5rem;
+  color: #961f35;
+  padding-bottom: 15px;
+  text-align: left;
+}
+.donation-container-image {
+  border-radius: 5px;
+  border: solid 3px black;
+  width: 70%;
+  height: 70%;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .donation-conainter h1 {
+    font-size: 2rem;
+    color: #961f35;
+    padding-bottom: 25px;
+  }
+
+  .donation-conainter h2 {
+    font-size: 1rem;
+    color: grey;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .donation-conainter h3 {
+    font-size: 1rem;
+    color: #961f35;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .donation-conainter h1 {
+    font-size: 2.5rem;
+    color: #961f35;
+    padding-bottom: 25px;
+  }
+
+  .donation-conainter h2 {
+    font-size: 0.75rem;
+    color: grey;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .donation-conainter h3 {
+    font-size: 0.75rem;
+    color: #961f35;
+    padding-bottom: 15px;
+    text-align: left;
+  }
 }
 
 /* =============================  General Body Meeting Info CSS Styles ==================================== */
