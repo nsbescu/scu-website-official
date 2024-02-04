@@ -1092,6 +1092,187 @@
     margin: 2.5rem 0;
   }
 }
+/* =============================  Drive Resources Container CSS Styles  ==================================== */
+
+.drive_resources {
+  background-color: #ffffff;
+}
+
+.drive_resources__container {
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  max-width: 1300px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  flex-wrap: wrap;
+}
+
+.drive_resources__container h1 {
+  text-align: center;
+  font-size: 4rem;
+  background-color: #961f35;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  padding-bottom: 50px;
+}
+
+.drive_resources__container h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 10px;
+  background-color: #961f35;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.drive_resources__container h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1px;
+  background-color: #141414;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.drive_resources__container a {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.drive_resources__container a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.drive_resources__container a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.drive_resources__container a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.drive_resources__container a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.drive_resources__container h4 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  background-color: #141414;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.drive_resources__container p {
+  color: #141414;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+
+.drive_resources__company__title {
+  background-color: #961f35;
+  color: #961f35;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.drive_resources__company__title h1 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 3.5rem;
+  text-align: center;
+  background-color: white;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.drive_resources__container_companies {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .drive_resources__container h1 {
+    font-size: 2.5rem;
+  }
+  .drive_resources__container h2 {
+    text-align: center;
+    font-size: 1rem;
+    background-color: #141414;
+    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .drive_resources__container h1 {
+    font-size: 2rem;
+  }
+
+  .drive_resources__container h2 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+    background-color: #141414;
+    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding-bottom: 40px;
+  }
+}
+
 /* =============================  FRC Resources Container CSS Styles  ==================================== */
 
 .frc_resources {
@@ -1140,13 +1321,42 @@
 .frc_resources__container h3 {
   text-align: center;
   font-size: 2rem;
-  margin-top: 10px;
+  margin-top: 1px;
   background-color: #141414;
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+
+.frc_resources__container a {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.frc_resources__container a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.frc_resources__container a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.frc_resources__container a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.frc_resources__container a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 .frc_resources__container h4 {
