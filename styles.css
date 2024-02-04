@@ -1150,12 +1150,6 @@
   font-size: 2rem;
 }
 
-.drive_resources__container a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
-
 .drive_resources__container a:visited {
   color: pink;
   background-color: transparent;
@@ -1163,7 +1157,7 @@
 }
 
 .drive_resources__container a:hover {
-  color: red;
+  color: white;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -1332,19 +1326,19 @@
 }
 
 .frc_resources__container a:link {
-  color: green;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 .frc_resources__container a:visited {
-  color: pink;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 
 .frc_resources__container a:hover {
-  color: red;
+  color: white;
   background-color: transparent;
   text-decoration: underline;
 }
