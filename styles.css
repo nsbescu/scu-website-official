@@ -9,7 +9,7 @@
 /* =============================  Navbar CSS Styles  ==================================== */
 
 .navbar {
-  background: #ffffff;
+  background: #ffff;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -1075,10 +1075,6 @@
   background: #141414;
   transition: all 0.35s;
   border-radius: 4px;
-}
-
-.addToCalendar__btn:hover {
-  color: #fff;
 }
 
 .addToCalendar__btn:hover:after {
