@@ -1121,30 +1121,6 @@
   padding-bottom: 50px;
 }
 
-.drive_resources__container h2 {
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 10px;
-  background-color: #961f35;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-.drive_resources__container h3 {
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 1px;
-  background-color: #141414;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
 .drive_resources__container a {
   text-align: center;
   font-size: 2rem;
