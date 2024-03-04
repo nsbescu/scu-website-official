@@ -6,6 +6,95 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+h1 {
+  font-size: 4rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+h2 {
+  font-size: 3rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+h3 {
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+h4 {
+  font-size: 1.5rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+h5 {
+  font-size: 1.5rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+h6 {
+  font-size: 1rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+/*h1 { This is used for Main Titles
+  font-size: 4rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}*/
+
+/*h2 { This is for Page titles 
+  font-size: 3rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}*/
+
+/*h3 {
+  font-size: 2rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}*/
+
+/*h4 { aka paragraph style
+  font-size: 1.5rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}*/
+
+/*h5 { Used for footer title sections 
+  font-size: 1.5rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}*/
+/*h6 { Used a tags in footer 
+  font-size: 1rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}*/
 
 /* =============================  Navbar CSS Styles  ==================================== */
 
@@ -2209,7 +2298,7 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .gen_body_information h2 {
@@ -2220,7 +2309,7 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 960px) {
