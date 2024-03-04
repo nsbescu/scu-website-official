@@ -542,14 +542,8 @@ h6 {
 
 .about__us__text__content h1 {
   text-align: center;
-  font-size: 3rem;
   background-color: #ffff;
-  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .about__us__text__content p {
@@ -653,27 +647,15 @@ h6 {
 
 .mission__statement__main__text__content h1 {
   text-align: center;
-  font-size: 3rem;
   background-color: #961f35;
-  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .mission__statement__main__text__content h2 {
   text-align: center;
-  font-size: 2.5rem;
   margin-top: 10px;
   background-color: #141414;
-  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .mission__statement__main__text__content p {
@@ -794,27 +776,15 @@ h6 {
 
 .current__board__main__text__content h1 {
   text-align: center;
-  font-size: 3rem;
   background-color: #961f35;
-  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .current__board__main__text__content h2 {
   text-align: center;
-  font-size: 2.5rem;
   margin-top: 10px;
   background-color: #141414;
-  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .current__board__main__text__content p {
@@ -928,27 +898,15 @@ h6 {
 
 .sponsor__info__text__content h1 {
   text-align: center;
-  font-size: 3rem;
   background-color: #fff;
-  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .sponsor__info__text__content h2 {
   text-align: center;
-  font-size: 2.5rem;
   margin-top: 10px;
   background-color: #fff;
-  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .sponsor__info__text__content p {
@@ -1044,7 +1002,7 @@ h6 {
 }
 
 .calendar__container iframe {
-  position: absolute; /* Position iframe absolutely within its container */
+  position: absolute; /*w Position iframe absolutely within its container */
   width: 100%; /* Set the width of the iframe to 100% */
   height: 100%; /* Set the height of the iframe to 100% */
   top: 0;
@@ -1062,14 +1020,8 @@ h6 {
 
 .calendar__content__container h1 {
   text-align: center;
-  font-size: 4rem;
   background-color: #961f35;
-  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .calendar__content__container h2 {
@@ -1077,12 +1029,7 @@ h6 {
   font-size: 0rem;
   margin-top: 10px;
   background-color: #141414;
-  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .calendar__content__container p {
@@ -1352,38 +1299,23 @@ h6 {
 
 .frc_resources__container h1 {
   text-align: center;
-  font-size: 4rem;
   background-color: #961f35;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
   padding-bottom: 50px;
 }
 
 .frc_resources__container h2 {
   text-align: center;
-  font-size: 3rem;
   margin-top: 10px;
   background-color: #961f35;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .frc_resources__container h3 {
   text-align: center;
-  font-size: 2rem;
   margin-top: 1px;
   background-color: #141414;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .frc_resources__container a {
@@ -1417,14 +1349,9 @@ h6 {
 
 .frc_resources__container h4 {
   text-align: center;
-  font-size: 2.5rem;
   margin-top: 10px;
   background-color: #141414;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .frc_resources__container p {
@@ -1451,13 +1378,8 @@ h6 {
 .frc_resources__company__title h1 {
   padding-top: 25px;
   padding-bottom: 25px;
-  font-size: 3.5rem;
   text-align: center;
   background-color: white;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .frc_resources__container_companies {
