@@ -423,10 +423,6 @@ h6 {
   background-color: #961f35;
   /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .sponsor__signup__main__text__content h2 {
@@ -436,10 +432,6 @@ h6 {
   background-color: #141414;
   /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .sponsor__signup__main__img--container--below {
@@ -1038,10 +1030,7 @@ h6 {
     background-color: #141414;
     /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+
     padding-bottom: 40px;
   }
 }
@@ -1058,10 +1047,7 @@ h6 {
     background-color: #141414;
     /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+
     padding-bottom: 40px;
   }
 }
@@ -1137,10 +1123,7 @@ h6 {
   font-size: 4rem;
   background-color: #961f35;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+
   padding-bottom: 50px;
 }
 
@@ -1173,10 +1156,6 @@ h6 {
   margin-top: 10px;
   background-color: #141414;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .drive_resources__container p {
@@ -1206,10 +1185,6 @@ h6 {
   font-size: 3.5rem;
   text-align: center;
   background-color: white;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .drive_resources__container_companies {
@@ -1234,10 +1209,7 @@ h6 {
     background-color: #141414;
     /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+
     padding-bottom: 40px;
   }
 }
@@ -1254,10 +1226,7 @@ h6 {
     background-color: #141414;
     /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+
     padding-bottom: 40px;
   }
 }
@@ -1390,10 +1359,7 @@ h6 {
     background-color: #141414;
     /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+
     padding-bottom: 40px;
   }
 }
@@ -1410,10 +1376,6 @@ h6 {
     background-color: #141414;
     /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
     padding-bottom: 40px;
   }
 }
@@ -1746,10 +1708,6 @@ h6 {
   background-color: #961f35;
   /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .sponsor__package__container__img {
