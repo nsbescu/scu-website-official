@@ -125,7 +125,7 @@ h6 {
 
 #navbar__logo {
   background-color: #961f35;
-  /* background-image: linear-gradient(to top, #961f35 0%, #ffb199 100%); only if i want the logo txt with gradient*/
+
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -152,8 +152,8 @@ h6 {
 .navbar__links {
   color: #141414;
   display: flex;
-  align-items: center; /* aligning items on the cross axis/ vertical in th middle top to bottom*/
-  justify-content: center; /* aligning items on the main axis left to right  */
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
@@ -309,7 +309,7 @@ h6 {
 
 .mailChimp__student__content__container {
   display: flex;
-  flex-direction: column; /* Stack the elements vertically */
+  flex-direction: column;
   align-items: center;
   justify-self: center;
   margin: 0 auto;
@@ -347,9 +347,8 @@ h6 {
   padding-bottom: 50px;
 }
 
-/* Apply rounded edges to an image */
 .rounded-image {
-  border-radius: 6px; /* Adjust the radius value as needed */
+  border-radius: 6px;
 }
 
 @media screen and (max-width: 768px) {
@@ -421,7 +420,7 @@ h6 {
   text-align: center;
   font-size: 4rem;
   background-color: #961f35;
-  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
+
   background-size: 100%;
 }
 
@@ -430,7 +429,7 @@ h6 {
   font-size: 2.5rem;
   margin-top: 10px;
   background-color: #141414;
-  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+
   background-size: 100%;
 }
 
@@ -440,7 +439,6 @@ h6 {
   height: 100%;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .sponsor__signup__content__container {
     height: 2800px;
@@ -543,7 +541,6 @@ h6 {
   width: 95%;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .about__us__content__container {
     display: flex;
@@ -655,7 +652,6 @@ h6 {
   width: 50%;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .mission__statement__container {
     display: flex;
@@ -788,7 +784,6 @@ h6 {
   object-fit: cover;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .current__board__container {
     display: flex;
@@ -906,7 +901,6 @@ h6 {
   max-width: 500px;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .sponsor__info__content__container {
     flex-direction: column-reverse;
@@ -1019,7 +1013,6 @@ h6 {
   padding-bottom: 50px;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .calendar__content__container h1 {
     font-size: 2.5rem;
@@ -1028,7 +1021,7 @@ h6 {
     text-align: center;
     font-size: 1rem;
     background-color: #141414;
-    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+
     background-size: 100%;
 
     padding-bottom: 40px;
@@ -1045,7 +1038,7 @@ h6 {
     font-size: 1rem;
     margin-top: 10px;
     background-color: #141414;
-    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+
     background-size: 100%;
 
     padding-bottom: 40px;
@@ -1055,7 +1048,7 @@ h6 {
 .addToCalendar__btn {
   font-size: 1rem;
   background-color: #961f35;
-  /* background-image: linear-gradient(to top, #961f35 0%, #fe5196 100%);  this is if I wanted to gradient this box */
+
   padding: 14px 32px;
   border: none;
   border-radius: 6px;
@@ -1090,7 +1083,6 @@ h6 {
   width: 100%;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 480px) {
   .addToCalendar__btn {
     padding: 12px 36px;
@@ -1198,7 +1190,6 @@ h6 {
   padding-bottom: 5%;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .drive_resources__container h1 {
     font-size: 2.5rem;
@@ -1207,7 +1198,7 @@ h6 {
     text-align: center;
     font-size: 1rem;
     background-color: #141414;
-    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+
     background-size: 100%;
 
     padding-bottom: 40px;
@@ -1348,7 +1339,6 @@ h6 {
   padding-bottom: 5%;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .frc_resources__container h1 {
     font-size: 2.5rem;
@@ -1357,7 +1347,7 @@ h6 {
     text-align: center;
     font-size: 1rem;
     background-color: #141414;
-    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+
     background-size: 100%;
 
     padding-bottom: 40px;
@@ -1374,7 +1364,7 @@ h6 {
     font-size: 1rem;
     margin-top: 10px;
     background-color: #141414;
-    /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
+
     background-size: 100%;
     padding-bottom: 40px;
   }
@@ -1409,7 +1399,7 @@ h6 {
   text-align: center;
 }
 .pd__image {
-  width: 65%; /* Adjust the width for the image */
+  width: 65%;
   border-radius: 8px;
   padding-top: 50px;
   display: flex;
@@ -1534,8 +1524,6 @@ h6 {
   width: 100%;
 }
 
-/* Mobile Responsive */
-
 @media screen and (max-width: 768px) {
   .socialMedia__btn {
     padding: 12px 36px;
@@ -1631,7 +1619,6 @@ h6 {
   padding-top: 25px;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .stacked__main__container {
     display: flex;
@@ -1706,7 +1693,7 @@ h6 {
   text-align: center;
   font-size: 4rem;
   background-color: #961f35;
-  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
+
   background-size: 100%;
 }
 
@@ -1721,7 +1708,6 @@ h6 {
   border-radius: 5px;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .sponsor__package__container__text h1 {
     font-size: 3rem;
@@ -1749,8 +1735,8 @@ h6 {
 
 .board__message__container {
   display: flex;
-  justify-content: space-evenly; /* place the two sub containers evently on the screen */
-  align-items: center; /* align on the cross axis */
+  justify-content: space-evenly;
+  align-items: center;
   justify-self: center;
   margin: 0 auto;
   height: auto;
@@ -1807,11 +1793,10 @@ h6 {
   width: 90%;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .board__message__container {
     display: flex;
-    align-items: center; /* align on the cross axis */
+    align-items: center;
     justify-self: center;
     flex-direction: column;
     flex-wrap: wrap-reverse;
@@ -1887,7 +1872,7 @@ h6 {
 .main__btn {
   font-size: 1rem;
   background-color: #fff;
-  /* background-image: linear-gradient(to top, #961f35 0%, #fe5196 100%);  this is if I wanted to gradient this box */
+
   padding: 14px 32px;
   border: none;
   border-radius: 6px;
@@ -1935,7 +1920,6 @@ h6 {
   width: 100%;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .main__container {
     display: flex;
@@ -2047,7 +2031,6 @@ h6 {
   height: 70%;
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .donation-conainter h1 {
     font-size: 2rem;
@@ -2181,7 +2164,7 @@ h6 {
 .stats__link--items {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items vertically */
+  align-items: center;
   text-align: center;
   margin: 14px;
   width: 140px;
@@ -2441,7 +2424,6 @@ h6 {
   transition: 0.3s ease-out;
 }
 
-/* Social Icons */
 .social__icon--link {
   color: #141414;
   font-size: 34px;
