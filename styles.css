@@ -1728,33 +1728,20 @@ h6 {
 }
 
 .lstacked__main__content h1 {
-  font-size: 2rem;
   background-color: #961f35;
-  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .lstacked__main__content h2 {
-  font-size: 3rem;
   margin-top: 10px;
   background-color: #961f35;
-  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
-.lstacked__main__content p {
-  color: #141414;
+.lstacked__main__content h4 {
+  background-color: #141414;
   font-style: italic;
   margin-top: 1rem;
-  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -1916,7 +1903,6 @@ h6 {
 }
 
 .board__message__img--container h1 {
-  font-size: 2rem;
   font-weight: bold;
   padding-top: 25px;
 }
@@ -1928,33 +1914,20 @@ h6 {
 
 .board__message__content h1 {
   padding-top: 25px;
-  font-size: 2rem;
   background-color: #961f35;
-  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .board__message__content h2 {
-  font-size: 3rem;
   margin-top: 10px;
   background-color: #961f35;
-  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
-.board__message__content p {
-  color: #141414;
+.board__message__content h4 {
+  background-color: #141414;
   font-style: italic;
   margin-top: 1rem;
-  font-size: 1.5rem;
   font-weight: 700;
   text-align: left;
 }
@@ -2039,32 +2012,14 @@ h6 {
 }
 
 .main__content h1 {
-  font-size: 4rem;
   background-color: #fff;
-  /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .main__content h2 {
-  font-size: 3rem;
   margin-top: 10px;
   background-color: #fff;
-  /* background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%); */
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-.main__content p {
-  margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: 700;
 }
 
 .main__btn {
@@ -2289,27 +2244,17 @@ h6 {
   height: 30vh;
 }
 
-.gen_body_information h1 {
+.gen_body_information h2 {
   background-color: #961f35;
   color: #961f35;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
   margin-bottom: 1rem;
-  font-size: 3rem;
 }
 
-.gen_body_information h2 {
+.gen_body_information h3 {
   background-color: #141414;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
   margin-bottom: 1rem;
-  font-size: 2rem;
 }
 
 @media screen and (max-width: 960px) {
@@ -2361,7 +2306,6 @@ h6 {
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2.5rem;
 }
 
 .stats__links {
@@ -2388,8 +2332,14 @@ h6 {
   text-align: center;
 }
 
-.stats__link--items h2 {
-  margin-bottom: 8px;
+.stats__link--items h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.stats__link--items h5 {
+  background-color: #fff;
 }
 
 .stats__link--items > h2 {
@@ -2435,24 +2385,25 @@ h6 {
 /* =============================  Join Us / Stay Connected CSS Styles   ==================================== */
 
 .services {
-  background: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: auto;
-  padding-top: 50px;
+
   padding-bottom: 50px;
 }
-.services h1 {
+
+.services h2 {
   background-color: #961f35;
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
   margin-bottom: 5rem;
-  font-size: 2.5rem;
+}
+
+.services h4 {
+  background-color: #fff;
+  background-size: 100%;
+  margin-bottom: 5rem;
 }
 
 .services__container {
@@ -2492,7 +2443,7 @@ h6 {
   background-size: cover;
 }
 
-.services__card h2 {
+.services__card h4 {
   position: absolute;
   top: 450px;
   left: 30px;
@@ -2615,12 +2566,9 @@ h6 {
   box-sizing: border-box;
 }
 
-.footer__link--items h2 {
+.footer__link--items h4 {
   margin-bottom: 16px;
-}
-
-.footer__link--items > h2 {
-  color: #fff;
+  background-color: #fff;
 }
 
 .footer__link--items a {
