@@ -560,7 +560,6 @@ h6 {
   }
 
   .about__us__text__content h1 {
-    font-size: 2.5rem;
     margin-top: 2rem;
   }
 
@@ -576,17 +575,11 @@ h6 {
 
 @media screen and (max-width: 480px) {
   .about__us__text__content h1 {
-    font-size: 2rem;
     margin-top: 3rem;
-  }
-
-  .about__us__text__content h2 {
-    font-size: 1rem;
   }
 
   .about__us__text__content p {
     margin-top: 2rem;
-    font-size: 1rem;
   }
 
   #about__us__img {
@@ -679,12 +672,10 @@ h6 {
   }
 
   .mission__statement__main__text__content h1 {
-    font-size: 2.5rem;
     margin-top: 2rem;
   }
 
   .mission__statement__main__text__content h2 {
-    font-size: 3rem;
   }
 
   .mission__statement__main__text__content p {
@@ -695,17 +686,11 @@ h6 {
 
 @media screen and (max-width: 480px) {
   .mission__statement__main__text__content h1 {
-    font-size: 2rem;
     margin-top: 3rem;
-  }
-
-  .mission__statement__main__text__content h2 {
-    font-size: 2rem;
   }
 
   .mission__statement__main__text__content p {
     margin-top: 2rem;
-    font-size: 1rem;
   }
   #mission__statement__main__NSBE__LOGO {
     height: 100%;
@@ -754,7 +739,6 @@ h6 {
 .current__board__main__text__content h1 {
   text-align: center;
   background-color: #961f35;
-  background-size: 100%;
 }
 
 .current__board__main__text__content h2 {
@@ -788,6 +772,10 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
+  .current__board__container__header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   .current__board__container {
     display: flex;
     flex-direction: column-reverse;
@@ -808,15 +796,6 @@ h6 {
   .current__board__main__text__content {
     text-align: center;
     margin-bottom: 4rem;
-  }
-
-  .current__board__main__text__content h1 {
-    font-size: 2.5rem;
-    margin-top: 2rem;
-  }
-
-  .current__board__main__text__content h2 {
-    font-size: 3rem;
   }
 
   .current__board__main__text__content p {
@@ -2104,45 +2083,27 @@ h6 {
   background-color: #961f35;
   color: #961f35;
   background-size: 100%;
-  margin-bottom: 1rem;
 }
 
 .gen_body_information h3 {
   background-color: #141414;
   background-size: 100%;
-  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 960px) {
   .gen_body_information {
-    height: 300px;
   }
 
-  .gen_body_information h1 {
-    font-size: 2rem;
-    margin-top: 4rem;
+  .gen_body_information h2 {
+    text-align: center;
   }
-
-  .gen_body_information h1 {
-    font-size: 2rem;
-    margin-top: 4rem;
+  .gen_body_information h3 {
+    padding-top: 25px;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .gen_body_information {
-    height: 300px;
-  }
-
-  .gen_body_information h1 {
-    font-size: 2rem;
-    margin-top: 4rem;
-  }
-
-  .gen_body_information h1 {
-    font-size: 2rem;
-    margin-top: 4rem;
-  }
 }
 
 /* =============================  Chapter Stats CSS Styles  ==================================== */
@@ -2359,8 +2320,7 @@ h6 {
     height: auto;
   }
 
-  .services h1 {
-    font-size: 2rem;
+  .services h2 {
     margin-top: 2rem;
     text-align: center;
   }
