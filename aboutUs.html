@@ -25,8 +25,40 @@
     />
   </head>
   <body>
-    <div id="targetHeaderDiv"></div>
-    <script src="navbar.js"></script>
+    <!-- Navbar Container -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">
+          <img
+            src="/images/NSBELogo_Color_withName.png"
+            alt="NSBESCU Logo"
+            style="width: 40px; height: auto; padding-right: 10px"
+          />
+          NSBESCU
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/aboutUs.html" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/sponsorPortal.html" class="navbar__links">Sponsors</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/chapterResources.html" class="navbar__links">Resources</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/stayconnected.html" class="button">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- About Us Container -->
     <div class="about__us">
       <div class="about__us__content__container">
@@ -64,11 +96,11 @@
         </div>
         <div class="mission__statement__main__text__content">
           <h1>Mission Statement</h1>
-          <p>
+          <h3>
             "to increase the number of culturally responsible black engineers
             who excel academically, succeed professionally and positively impact
-            the community."
-          </p>
+            the community." - National Society of Black Engineers
+          </h3>
         </div>
       </div>
     </div>

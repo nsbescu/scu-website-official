@@ -25,8 +25,40 @@
     />
   </head>
   <body>
-    <div id="targetHeaderDiv"></div>
-    <script src="navbar.js"></script>
+    <!-- Navbar Container -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">
+          <img
+            src="/images/NSBELogo_Color_withName.png"
+            alt="NSBESCU Logo"
+            style="width: 40px; height: auto; padding-right: 10px"
+          />
+          NSBESCU
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/aboutUs.html" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/sponsorPortal.html" class="navbar__links">Sponsors</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/chapterResources.html" class="navbar__links">Resources</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/stayconnected.html" class="button">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- Sponsor Info Container -->
     <div class="sponsor__info">
       <!-- Using the same AboutUs Template for Sponsorship intro message" -->
@@ -41,7 +73,7 @@
         </div>
         <div class="sponsor__info__text__content">
           <h1>Sponsors</h1>
-          <p>
+          <h3>
             Our corporate partners play a vital role in advancing our strategic
             priorities, helping us cultivate a diverse talent pool and implement
             transformative programs for scholars, emerging engineers, and
@@ -53,7 +85,7 @@
             innovative solutions, and enhanced productivity. The NSBE Corporate
             Partner program stands as the foremost solution for securing diverse
             engineering talent.
-          </p>
+          </h3>
         </div>
       </div>
     </div>

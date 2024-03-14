@@ -26,6 +26,8 @@ h3 {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  font-weight: 400;
+  padding-top: 25px;
 }
 h4 {
   font-size: 1.5rem;
@@ -316,7 +318,10 @@ h6 {
   background-color: #961f35;
   width: 100%;
   max-width: 1300px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
 }
 
 .mailChimp__student__text__content {
@@ -329,22 +334,6 @@ h6 {
   background-color: #fff;
   background-size: 100%;
   padding-bottom: 20px;
-  padding-top: 50px;
-}
-
-.mailChimp__student__text__content h2 {
-  text-align: center;
-  margin-top: 10px;
-  background-color: #141414;
-  background-size: 100%;
-}
-
-.mailChimp__student__text__content p {
-  color: #141414;
-  text-align: center;
-  margin-top: 1rem;
-  font-weight: 700;
-  padding-bottom: 50px;
 }
 
 .rounded-image {
@@ -352,40 +341,13 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
-  .mailChimp__student__text__content {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-
   .mailChimp__student__text__content h1 {
     font-size: 2.5rem;
     margin-top: 2rem;
   }
-
-  .mailChimp__student__text__content h2 {
-    font-size: 3rem;
-  }
-
-  .mailChimp__student__text__content p {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
-  .mailChimp__student__text__content h1 {
-    font-size: 2rem;
-    margin-top: 3rem;
-  }
-
-  .mailChimp__student__text__content h2 {
-    font-size: 2rem;
-  }
-
-  .mailChimp__student__text__content p {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-  }
 }
 
 /* =============================  Google Form - Sponsor Sign Up CSS Styles  ==================================== */
@@ -507,6 +469,8 @@ h6 {
   width: 100%;
   max-width: 1300px;
 
+  padding-right: 50px;
+  padding-left: 50px;
   padding-bottom: 50px;
   padding-top: 50px;
 }
@@ -614,23 +578,14 @@ h6 {
 .mission__statement__main__text__content h1 {
   text-align: center;
   background-color: #961f35;
-  background-size: 100%;
 }
 
-.mission__statement__main__text__content h2 {
-  text-align: center;
-  margin-top: 10px;
+.mission__statement__main__text__content h3 {
   background-color: #141414;
-  background-size: 100%;
-}
-
-.mission__statement__main__text__content p {
   color: #141414;
   text-align: left;
-  margin-top: 1rem;
-  font-size: 1.5rem;
   font-weight: 400;
-  padding-bottom: 50px;
+  padding-top: 30px;
   font-style: italic;
 }
 
@@ -668,14 +623,6 @@ h6 {
 
   .mission__statement__main__text__content h1 {
     margin-top: 2rem;
-  }
-
-  .mission__statement__main__text__content h2 {
-  }
-
-  .mission__statement__main__text__content p {
-    margin-top: 1rem;
-    font-size: 1.5rem;
   }
 }
 
@@ -826,7 +773,7 @@ h6 {
 
 .sponsor__info__content__container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   align-items: center;
   justify-self: center;
   margin: 0 auto;
@@ -852,30 +799,20 @@ h6 {
   background-size: 100%;
 }
 
-.sponsor__info__text__content h2 {
-  text-align: center;
-  margin-top: 10px;
-  background-color: #fff;
-  background-size: 100%;
-}
-
-.sponsor__info__text__content p {
+.sponsor__info__text__content h3 {
   color: #fff;
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 50px 50px;
+  background-color: #fff;
   text-align: left;
 }
 
 .sponsor__info__img--container--below {
-  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 #sponsor__info__img {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 @media screen and (max-width: 768px) {
@@ -887,39 +824,12 @@ h6 {
     text-align: center;
   }
 
-  .sponsor__info__text__content h1 {
-    font-size: 2.5rem;
-    margin-top: 2rem;
-  }
-
-  .sponsor__info__text__content h2 {
-    font-size: 3rem;
-  }
-
-  .sponsor__info__text__content p {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
   #sponsor__info__img {
-    width: 80%;
+    padding-top: 25px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .sponsor__info__text__content h1 {
-    font-size: 2.5rem;
-  }
-
-  .sponsor__info__text__content h2 {
-    font-size: 1rem;
-  }
-
-  .sponsor__info__text__content p {
-    font-size: 1rem;
-  }
-  #sponsor__info__img {
-    width: 80%;
-  }
 }
 
 /* =============================  Google Calendar Container CSS Styles  ==================================== */
