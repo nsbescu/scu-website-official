@@ -503,17 +503,12 @@ h6 {
   margin: 0 auto;
   height: auto;
   background-color: #961f35;
-  z-index: 1;
+
   width: 100%;
   max-width: 1300px;
-  padding-right: 50px;
-  padding-left: 50px;
+
   padding-bottom: 50px;
   padding-top: 50px;
-}
-
-.about__us__text__content {
-  width: 100%;
 }
 
 .about__us__text__content h1 {
@@ -521,18 +516,18 @@ h6 {
   background-color: #ffff;
 }
 
-.about__us__text__content p {
+.about__us__text__content h3 {
   color: #ffff;
   text-align: left;
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  background-color: #fff;
   font-weight: 400;
-  padding-bottom: 50px;
+  padding-top: 30px;
 }
 
 .about__us__img--container {
   text-align: center;
-  padding-left: 50px;
+  padding-left: 2%; /* Adjust the padding as needed */
+  height: 100%;
 }
 
 #about__us__img {
@@ -2471,4 +2466,29 @@ h6 {
   }
 }
 
+/* =============================  Events Page Section ==================================== */
+
+.events {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.events__container h1 {
+  text-align: center;
+  width: 100%;
+  background-color: #961f35;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.events__container h3 {
+  text-align: center;
+  width: 100%;
+  background-color: #141414;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 /* =============================  End of CSS Styles  ==================================== */
