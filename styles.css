@@ -1889,6 +1889,7 @@ h6 {
 
 .donation {
   background: transparent;
+  text-align: center;
 }
 .donation-conainter {
   background: transparent;
@@ -1900,7 +1901,7 @@ h6 {
   flex-direction: column;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 25px;
+  padding-left: 50px;
   padding-right: 25px;
 }
 .donation-container-text {
@@ -1920,7 +1921,6 @@ h6 {
 .donation-conainter h3 {
   background-color: #961f35;
   padding-bottom: 15px;
-  text-align: left;
 }
 .donation-container-image {
   border-radius: 5px;
@@ -2425,6 +2425,12 @@ h6 {
 
 .rounded-image-bnn {
   border-radius: 20px;
+}
+
+.dog--container {
+  text-align: center;
+  height: 100%;
+  width: 90%;
 }
 
 /* =============================  End of CSS Styles  ==================================== */
