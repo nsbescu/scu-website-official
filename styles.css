@@ -2380,9 +2380,10 @@ h6 {
 
 .events {
   display: flex;
-  height: 400px;
+  height: 100%;
   width: 100%;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .events__container h1 {
