@@ -2411,12 +2411,14 @@ h6 {
   font-weight: 500;
 }
 .stemDayImage {
-  width: 100%;
-  height: 100%;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 40px;
-  object-fit: cover;
+  flex-direction: row;
+  justify-content: center;
 }
 #stemDayIMG {
   height: 100%;
@@ -2425,6 +2427,12 @@ h6 {
 
 .rounded-image-bnn {
   border-radius: 20px;
+  align-items: center;
+}
+
+.rounded-image-qr {
+  border-radius: 20px;
+  align-items: center;
 }
 
 .dog--container {
